@@ -1,0 +1,113 @@
+.container {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  right: 50px;
+  z-index: 20;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 50px;
+  min-width: 450px;
+}
+
+.buttonBack {
+  border: 1px solid var(--pink);
+  color: var(--pink);
+  font-size: 14px;
+  padding: 5px 0px;
+  max-width: 60px;
+  border-radius: 10px;
+  transition:
+    background-color .5s linear,
+    color .5s linear;
+}
+
+.buttonBack:hover,
+.buttonBack:focus {
+  color: var(--white);
+  background-color: var(--pink);
+}
+
+.heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.input {
+  border: 1px solid var(--pink);
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+  transition: border 0.5s linear;
+}
+
+.input:hover,
+.input:focus {
+  border: 1px solid var(--black);
+}
+
+.buttonPay {
+  min-width: 300px;
+  width: 100%;
+  color: var(--white);
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: var(--pink);
+  padding: 15px 20px;
+  border: 2px solid transparent;
+  transition:
+    background-color .5s linear,
+    color .5s linear,
+    border .5s linear;
+
+}
+
+.disabled {
+  opacity: 50%;
+}
+
+.active:hover,
+.activey:focus {
+  color: var(--pink);
+  background-color: var(--white);
+  border: 2px solid var(--pink);
+
+}
+
+
+@media all and (max-width: 540px) {
+
+  .container {
+    top: 10px;
+    right: 0;
+  }
+
+  .form {
+    padding: 20px;
+    min-width: 350px;
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .input, .heading {
+
+
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    z-index: 10;
+}
+
+.select {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    background-color: inherit;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c7cacc;
+    padding: 18px;
+    font-size: 15px;
+    border: 2px solid var(--pink);
+    min-width: 250px;
+    background-color: var(--white);
+    transition: border-color 0.3s ease;
+}
+
+.containerPay {
+    position: absolute;
+    top: 450px;
+    right: 50px;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.sum {
+    font-weight: bold;
+}
+
+.button {
+    min-width: 100px;
+    color: var(--pink);
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: var(--white);
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color .3s linear;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--pink);
+    color: var(--white);
+}
